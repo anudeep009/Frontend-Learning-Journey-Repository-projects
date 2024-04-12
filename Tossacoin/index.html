@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-auto" style="background-color: #282833">
+    <!-- nav-bar-starts -->
+    <nav class="flex justify-around font-mono text-white items-center h-20">
+      <div>
+        <h1 class="font-semibold text-xl hover:cursor-pointer">
+          Anudeep Avula
+        </h1>
+      </div>
+      <div class="sm:flex hidden justify-between text-xl">
+        <ul class="flex gap-10">
+          <li id="elements" class="ml-3">Home</li>
+          <li id="elements">About</li>
+          <li id="elements">Skills</li>
+          <li id="elements">My Work</li>
+          <li id="elements">Contact</li>
+        </ul>
+      </div>
+      <i
+        class="fa-solid fa-circle-half-stroke fa-lg ml-3"
+        onclick="changeMode()"
+      ></i>
+      <div class="md:hidden ml-5">
+        <i
+          id="drop-down-menu"
+          class="fa-solid fa-bars fa-lg"
+          onclick="handlemenu()"
+        ></i>
+      </div>
+      <!-- side-bar starts -->
+      <div
+        class="hidden fixed inset-0 bg-red-500 p-3 flex justify-between font-medium"
+        class="side-bar"
+      >
+        <div class="text-xl">
+          <h1 class="font-semibold text-xl hover:cursor-pointer ml-4 mt-2">
+            Anudeep Avula
+          </h1>
+          <ul class="ml-5 mt-8">
+            <li id="elements" class="mt-4">Home</li>
+            <li id="elements" class="mt-4">About</li>
+            <li id="elements" class="mt-4">Skills</li>
+            <li id="elements" class="mt-4">My Work</li>
+            <li id="elements" class="mt-4">Contact</li>
+          </ul>
+        </div>
+        <div class="ml-5 mt-2">
+          <i id="wrong" class="fa-solid fa-square-xmark fa-lg"></i>
+        </div>
+      </div>
+      <!-- side-bar-ends -->
+    </nav>
+    <!-- introduction -->
+    <section>
+      <div class="pl-40 pt-20 space-y-5 text-white">
+        <h2
+          class="font-bold text-lg md:text-xl pl-2 text-[#168fb8]"
+          style="color: #168fb8"
+        >
+          Hello! 👋 My name is
+        </h2>
+        <h1 class="md:text-5xl font-bold text-xl">Anudeep Avula</h1>
+        <p class="font-medium">
+          I create websites that marry style with function, delivering sleek
+          designs that perform seamlessly.
+        </p>
+        <button
+          class="bg-sky-500 p-2 text-lg md:text-xl rounded-lg md:rounded-sm"
+          style="background-color: #168fb8"
+        >
+          Resume
+        </button>
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="text-white pl-40 mt-40">
+      <h1 class="font-bold text-2xl md:text-4xl mb-10">About</h1>
+      <div class="flex justify-center md:rounded-xl">
+        <p>
+          Hello! I'm Vijay and I'm a frontend developer, designer and Open source
+          contributor from Kerala, India. Right after my 12th grade, I started to
+          explore various technologies and landed to my first freelance
+          opportunity in Dec 2021. Freelancing for me seems to be a great way to
+          learn and earn at the same time. I have been working as a freelancer in
+          freelancer.com from the field of logo & Package design to UI/UX &
+          Frontend development. In recent time, I've been focused on programming,
+          building a solid frontend stack and creating exciting projects that
+          solve real-world problems. Alongside my design and development work, I'm
+          also an 3rd year CSE Btech student at Rajagiri School of Engineering &
+          Technology.
+        </p>
+        <img class="h-80 w-80" src="profile_photo.jpg" alt="profile-photo">
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/00feda5e21.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>
